@@ -18,24 +18,24 @@ export class AppComponent {
     }
   ]
 
-  addComment(comment) {
+  addComment(comment: string): void{
     if (comment) {
       this.comments.push({comment: comment, subcomments: []});
       this.value = '';
     }
   }
 
-  addSubComment(subComment, i) {
+  addSubComment(subComment: string, i: any): void {
     if (subComment) {
       this.comments[i].subcomments.push(subComment);
     }
   }
 
-  removeComment(i) {
+  removeComment(i: any): void {
     this.comments.splice(i, 1);
   }
 
-  removeSubComment(i, j) {
+  removeSubComment(i: any, j: any): void {
     this.comments[i].subcomments.splice(j, 1);
   }
 }
