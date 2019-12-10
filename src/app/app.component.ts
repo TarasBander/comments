@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   value = '';
+  searchText = '';
+  i;
+  j;
   comments = [
     {
       comment: 'test commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest comment',
