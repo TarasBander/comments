@@ -1,0 +1,91 @@
+.posts {
+    padding-left: 10px;
+    width: 95%;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.subPosts {
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+.subTextarea {
+    width: 99%;
+    border: 1px solid #cec8c8;
+}
+.textarea {
+    width: 94%;
+    margin-top: 20px;
+    border: 1px solid #cec8c8;
+    margin-left: 10px;
+}
+.submit-btn {
+    float: right;
+    cursor: pointer;
+    background-color: rgb(148, 20, 20);
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    border: 1px solid rgb(148, 20, 20);
+    border-radius: 6px;
+    outline: none;
+}
+
+.bg {
+    background-color: #eeeeee;
+    border-left: 2px solid rgb(199, 198, 198);
+    padding-left: 15px;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+.subBg {
+    border-left: 2px solid rgb(199, 198, 198);
+    padding-left: 15px;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.subPost {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.add-btn {
+    margin-right: 4%;
+}
+
+.remove-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.search {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 25px;
+    padding: 5px;
+    width: 94%;
+    border: 1px solid #cec8c8;
+}
+
+.searchSub {
+    margin-top: 15px;
+    height: 25px;
+    padding: 5px;
+    width: 98%;
+    border: 1px solid #cec8c8;
+}
