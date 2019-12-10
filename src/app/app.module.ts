@@ -4,21 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchPipe } from './search.pipe';
 
 import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    Ng2SearchPipeModule
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:   [SearchPipe]
 })
 export class AppModule { }

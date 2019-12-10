@@ -1,21 +1,20 @@
 <div class="bg">
   <input class="search" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search Comment">
-  <div class="posts" *ngFor="let comment of comments | filter:searchText; let i = index;trackBy:trackByIndex;">
+  <div class="posts" *ngFor="let comment of comments | search:searchText; let i = index;">
     <div class="post">{{ comment.comment }}
       <button class="remove-btn" (click)="removeComment(i)">x</button>
     </div>
     <div class="subBg">
-      <div *ngIf="comment.subСomments.length">
-        <!-- <input class="searchSub" type="text" name="search" [(ngModel)]="searchSub" autocomplete="off" placeholder="Search SubComment"> -->
-        <div class="subPosts" *ngFor="let subComment of comment.subСomments | filter:searchSub;let j = index;trackBy:trackByIndex;">
+      <div *ngIf="comment.subcomments.length">
+        <div class="subPosts" *ngFor="let subComment of comment.subcomments;let j = index;">
           <div class="subPost">{{ subComment }}
             <button class="remove-btn" (click)="removeSubComment(i, j)">x</button>
           </div>
         </div>
       </div>
-      <textarea class="subTextarea" rows="3" [(ngModel)]="comment.subСomments[j]"></textarea>
+      <textarea class="subTextarea" rows="3" [(ngModel)]="comment.subcomments[j]"></textarea>
       <div>
-        <button class="submit-btn" (click)="addSubComment(comment.subСomments[j], i); comment.subСomments[j] = ''">submit</button>
+        <button class="submit-btn" (click)="addSubComment(comment.subcomments[j], i); comment.subcomments[j] = ''">submit</button>
       </div>
     </div>
   </div>

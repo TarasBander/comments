@@ -10,24 +10,24 @@ export class AppComponent {
   comments = [
     {
       comment: 'test commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest commenttest comment',
-      subСomments: ['test sub comment test sub comment test sub comment test sub commentv test sub comment v vtest sub commentv vvtest sub commentv vtest sub comment test sub commenttest sub comment']
+      subcomments: ['test sub comment test sub comment test sub comment test sub commentv test sub comment v vtest sub commentv vvtest sub commentv vtest sub comment test sub commenttest sub comment']
     },
     {
       comment: 'test comment2, test comment2 test comment2 test comment2 test comment2 vv v vv test comment2test comment2vtest comment2v vv test comment2 v v vv vtest comment2test comment2v vtest comment2v vv',
-      subСomments: []
+      subcomments: []
     }
   ]
 
   addComment(comment) {
     if (comment) {
-      this.comments.push({comment: comment, subСomments: []});
+      this.comments.push({comment: comment, subcomments: []});
       this.value = '';
     }
   }
 
   addSubComment(subComment, i) {
     if (subComment) {
-      this.comments[i].subСomments.push(subComment);
+      this.comments[i].subcomments.push(subComment);
     }
   }
 
@@ -36,6 +36,6 @@ export class AppComponent {
   }
 
   removeSubComment(i, j) {
-    this.comments[i].subСomments.splice(j, 1);
+    this.comments[i].subcomments.splice(j, 1);
   }
 }
